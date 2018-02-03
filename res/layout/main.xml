@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg1"
+    android:gravity="bottom|center_horizontal"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/beatLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="BEAT" />
+    
+    <TextView
+        android:id="@+id/musicLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="None" />
+
+    <Button
+        android:id="@+id/changeButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:text="Change" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/adviceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not enough data..."
+        android:layout_marginBottom="65dp" />
+    
+   <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_marginBottom="20dp">
+           <TextView
+               android:id="@+id/toggleButton1Label"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:text="Work Mode: "
+               android:textAppearance="?android:attr/textAppearanceLarge" />
+           <ToggleButton
+               android:id="@+id/toggleButton1"
+               android:layout_toRightOf="@id/toggleButton1Label"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+    </RelativeLayout>
+   
+</LinearLayout>
